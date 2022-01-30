@@ -1,0 +1,56 @@
+<!Doctype Html>
+<Html>   
+<Head>    
+<Title>   
+Make a Dropdown Menu using Internal CSS
+</Title>
+<style>
+.dropbtn {
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    font-size: 12px;
+}
+.dropdown {
+    display: inline-block;
+    position: relative
+}
+.dropdown-content {
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 200px;
+    display: none;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: orange;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: grey;
+}
+</style>
+</Head>
+<Body> 
+This page helps you to understand how to make a dropdown menu in Html document.
+And, this section helps you to understand how to make a dropdown menu using Internal CSS. <br>
+<div class="dropdown">
+<button class="dropbtn"> JavaTpoint Web Desiging Tutorials</button>
+<div class="dropdown-content">
+<a href="https://www.javatpoint.com/html-tutorial"> Html </a>
+<a href="https://www.javatpoint.com/css-tutorial"> CSS </a>
+<a href="https://www.javatpoint.com/javascript-tutorial"> JavaScript </a>
+</div>
+</div>
+</Body> 
+</Html>
+
+ 

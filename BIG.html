@@ -1,0 +1,265 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+</head> 
+<style>  
+table, th, td {  
+  border: 2px solid black;  
+  border-collapse: collapse;  
+}  
+  table{  
+            border-collapse: collapse;  
+            width: 100%;   
+        }  
+    th,td{  
+        border: 2px solid green;   
+        padding: 15px;  
+    }
+	thead,tfoot{  
+            background-color:#3f87a6;  
+            }  
+        tbody{  
+           background-color:#97ffff;  
+            }  
+ function clickMe() {  
+    var x= document.getElementsByTagName("template")[0];  
+    var clon = x.content.cloneNode(true);  
+    document.body.appendChild(clon);}  	
+function myFunction() 
+{
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) 
+  {
+    x[i].style.display = "none";
+  }
+}
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</style>  
+<body>
+<div>
+<!---------FORMATTING--------->
+<p> <i>Write Your First Paragraph in italic text.</i></p>  
+<p><em>This is an important content</em>, which displayed in italic font.</p>  
+<h2>  I want to put a <mark> Mark</mark> on your face</h2>
+<p> <u>Write Your First Paragraph in underlined text.</u></p>
+<p> <strike>Write Your First Paragraph with strikethrough</strike>.</p> 
+<p>Hello <tt>Write Your First Paragraph in monospaced font.</tt></p>
+<p>Hello <sup>Write Your First Paragraph in superscript.</sup></p>     
+<p>Hello <sub>Write Your First Paragraph in subscript.</sub></p>
+<p>Hello <del>Delete your first paragraph.</del></p>
+<p> <del>Delete your first paragraph.</del><ins>Write another paragraph.</ins></p>  
+<p>Hello <big>Write the paragraph in larger font.</big></p>  
+<p>Hello <small>Write the paragraph in smaller font.</small></p>  
+<br>
+</div>
+<!---------image--------------->
+<h2>Image Maps</h2>
+<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer"
+  href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone"
+  href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+<br>
+<!------------PHRASE-------------->
+<p>An <abbr>HTML </abbr>language is used to create web pages. </p>  
+<p>This tag will <mark>highlight</mark> the text.</p> 
+<p>In HTML it is recommended to use <strong>lower-case</strong>, while writing a code. </p>  
+<p>HTML is an <em>easy </em>to learn language.</p>  
+<p><dfn>HTML </dfn> is a markup language. </p>  
+<blockquote cite="https://www.keepinspiring.me/famous-quotes/"><p>?The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.?</p></blockquote>   
+ <cite>-Mark Caine</cite> 
+ <p>Steve Jobs said: <q>If You Are Working On Something That You Really Care About, You Don?t Have To Be Pushed. The Vision Pulls You.</q>?</p>  
+ <p>First Java program</p>  
+      <p><code>class Simple{ public static void main(String args[]){   
+       System.out.println("Hello Java"); }} </code>  
+     </p>  
+	 <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + t<kbd></kbd> to restore page on chrome.</p> 
+	 <address> You can ask your queries by contact us on <a href="">example123@newdomain.com</a>  
+   <br> You can also visit at: <br>58 S. Garfield Street. Villa Rica, GA 30187.  
+  </address> 
+  <br>
+  <!-----------TABLE------------->
+<table border="1" bgcolor="#98f5ff">
+<table style=" border-collapse: collapse; background-color:#dcdcdc;">      
+<tr><th>First_Name</th><th>Last_Name</th><th>Marks</th></tr>  
+<tr><td>Sonoo</td><td>Jaiswal</td><td>60</td></tr>  
+<tr><td>James</td><td>William</td><td>80</td></tr>  
+<tr><td>Swati</td><td>Sironi</td><td>82</td></tr>  
+<tr><td>Chetna</td><td>Singh</td><td>72</td></tr>  
+</table>  
+<br>
+<!-------------TEMPLATE-------------->
+<h5>Example of template tag</h2>  
+  <button onclick="clickMe()">Click Me</button><br>  
+    
+ <template id="mytemplate">  
+   <img src="robotics.jpg" alt="bird's image" height="100" width="100">  
+   <script>  
+   alert("Thank you for choosing template. Click OK for image.")  
+   </script>  
+  </template> 
+<br>  
+  <!--------------textarea---------------->
+  <form action="updates.jsp" id="usrform">  
+ Name: <input type="text" name="usrname">  
+ <input type="submit">  
+</form>  
+<br>  
+<textarea rows="9" cols="70" name="comment" form="usrform">  
+Enter text here...</textarea>  
+<p>The text area above is outside the form element, but should still be a part of the form.</p>  
+<p><b>Note:</b> The form attribute is not supported in Internet Explorer.</p>
+<br>
+<!----------time------------>
+<p>We open our shop at <time>09:00</time> am.</p>  
+<p>The business meeting is scheduled on <time datetime="2009-02-18">next wednesday</time>.</p>  
+<p>The wedding of Salman's sister was scheduled  at <time datetime="2014-11-19 T0 7:00-09:00">7pm last wednesday </time>.</p> 
+<br>
+<!-------------list------------->
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+<ol>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</ol>
+<ul>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</ul>
+<!----------Block and Inline Elements--------->
+<div>Hello World</div>
+<span>Hello World</span>
+<p>This is an inline span <span style="border: 1px solid black">Hello World</span> element inside a paragraph.</p>
+
+<p>The SPAN element is an inline element, and will not start on a new line and only takes up as much width as necessary.</p>
+<br>
+<!--------------html elements----------->
+<!--------class attribute--------->
+<h2>The class Attribute</h2>
+<p>Use CSS to style elements with the class name "city":</p>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<!---------multiple class---------->
+<h2>Multiple Classes</h2>
+<p>Here, all three h2 elements belongs to the "city" class. In addition, London also belongs to the "main" class, which center-aligns the text.</p>
+
+<h2 class="city main">London</h2>
+<h2 class="city">Paris</h2>
+<h2 class="city">Tokyo</h2>
+<!------class attribute---->
+<h2>Use of The class Attribute in JavaScript</h2>
+<p>Click the button to hide all elements with class name "city":</p>
+
+<button onclick="myFunction()">Hide elements</button>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+<br>
+<!----------iframe-------->
+<h2>Iframe - Target for a Link</h2>
+
+<iframe src="demo_iframe.htm" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+<p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+<br>
+<!-------------javascript------------->
+<h2>Use JavaScript to Change Text</h2>
+<p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+
+<p id="demo"></p>
+<!----------no js--------->
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+<br>
+<!---------file path--------->
+<h2>Using a Relative File Path</h2>
+<img src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_detail/few_off/Centenario/header_Centenario_og_wa%20(1).jpg" alt="Mountain" style="width:300px">
+<!------------layout---------------->
+
+<h2>CSS Layout Float</h2>
+<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+
+<header>
+  <h2>Cities</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+<br>
+<!-----------pcode element--------->
+<h2>The code Element</h2>
+<p>Programming code example:</p>
+
+<code>
+x = 5;
+y = 6;
+z = x + y;
+</code>
+<br>
+<p>The code element does not preserve whitespace and line-breaks.</p>
+<p>To fix this, you can put the code element inside a pre element:</p>
+
+<pre>
+<code>
+x = 5;
+y = 6;
+z = x + y;
+</code>
+</pre>
+
+</body>  
+</html> 

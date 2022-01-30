@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<style>
+   body {
+      color: #000;
+      height: 100vh;
+      background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%) no-repeat;
+      text-align: center;
+   }
+   input {
+      width: 315px;
+      display: block;
+      margin: 1rem auto;
+      border: 2px solid #fff;
+      padding: 8px;
+      background: transparent;
+      border-radius: 20px;
+      outline: none;
+   }
+   ::placeholder {
+      color: #000;
+   }
+   .btn {
+      background: #db133a;
+      border: none;
+      height: 2rem;
+      border-radius: 20px;
+      width: 330px;
+      display: block;
+      color: #fff;
+      outline: none;
+      cursor: pointer;
+      margin: 1rem auto;
+   }
+</style>
+<body>
+<h1>HTML Form action Attribute Demo</h1>
+<form action="" method="get" class="form-example">
+  <div class="form-example">
+    <label for="name">Enter your name: </label>
+    <input type="text" name="name" id="name" required>
+  </div>
+  <div class="form-example">
+    <label for="email">Enter your email: </label>
+    <input type="email" name="email" id="email" required>
+  </div>
+  <div class="form-example">
+    <input type="submit" value="Submitted!">
+  </div>
+</form>
+
+</body>
+</html>
